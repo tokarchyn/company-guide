@@ -1,0 +1,21 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {},
+    "functions": [],
+    "variables": {},
+    "resources": [
+        {
+            "name": "map-account",
+            "type": "Microsoft.Maps/accounts",
+            "apiVersion": "2021-02-01",
+            "location": "[resourceGroup().location]",
+            "sku": {
+                "name": "G2"
+            },
+            "kind": "Gen2",
+            "properties": {}
+        }
+    ],
+    "outputs": {}
+}
